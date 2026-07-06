@@ -1,8 +1,8 @@
 /**
  * App Component - Main Application Container
  * 
- * Thành phần chính của ứng dụng MROE Dashboard
- * Quản lý navigation, state chung và layout chính
+ * Main component of MROE Dashboard application
+ * Manages navigation, shared state, and main layout
  */
 
 import React, { useState, useEffect } from 'react';
@@ -12,9 +12,9 @@ import Header from './components/Header';
 import './styles/App.css';
 
 /**
- * App - Thành phần gốc của ứng dụng
+ * App - Root component of the application
  * 
- * @returns {JSX.Element} Giao diện chính ứng dụng
+ * @returns {JSX.Element} Main application interface
  */
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,15 +22,15 @@ function App() {
   const [activeTab, setActiveTab] = useState('overview');
 
   /**
-   * Tải dữ liệu tài nguyên khi component mount
+   * Load resources data when component mounts
    */
   useEffect(() => {
     const loadResources = async () => {
       try {
-        // Lấy dữ liệu tài nguyên từ API
+        // Fetch resources data from API
         setIsLoading(false);
       } catch (error) {
-        console.error('Lỗi khi tải tài nguyên:', error);
+        console.error('Error loading resources:', error);
         setIsLoading(false);
       }
     };
@@ -45,7 +45,7 @@ function App() {
         <Header title="MROE Dashboard" />
         <main className="app-content">
           {isLoading ? (
-            <div className="loading">Đang tải...</div>
+            <div className="loading">Loading...</div>
           ) : (
             <Dashboard resources={resources} activeTab={activeTab} />
           )}

@@ -1,12 +1,12 @@
 /**
  * Dashboard Page Component
  * 
- * Trang chính hiển thị tổng quan và quản lý tài nguyên
- * Gồm các widget thống kê, biểu đồ, và điều khiển chính
+ * Main page displaying system overview and resource management
+ * Contains statistics widgets, charts, and main controls
  * 
- * @param {Object} props - Props của component
- * @param {Array} props.resources - Danh sách tài nguyên
- * @param {string} props.activeTab - Tab hiện tại được chọn
+ * @param {Object} props - Component props
+ * @param {Array} props.resources - List of resources
+ * @param {string} props.activeTab - Currently selected tab
  * @returns {JSX.Element} Dashboard UI
  */
 
@@ -15,26 +15,26 @@ import '../styles/Dashboard.css';
 
 const Dashboard = ({ resources, activeTab }) => {
   /**
-   * Hiển thị nội dung dựa trên tab hiện tại
+   * Render content based on currently selected tab
    */
   const renderContent = () => {
     switch (activeTab) {
       case 'overview':
         return (
           <div className="dashboard-section">
-            <h2>Tổng quan hệ thống</h2>
+            <h2>System Overview</h2>
             <div className="stats-grid">
               <div className="stat-card">
                 <div className="stat-value">42</div>
-                <div className="stat-label">Tài nguyên hoạt động</div>
+                <div className="stat-label">Active Resources</div>
               </div>
               <div className="stat-card">
                 <div className="stat-value">87%</div>
-                <div className="stat-label">Hiệu suất trung bình</div>
+                <div className="stat-label">Average Performance</div>
               </div>
               <div className="stat-card">
                 <div className="stat-value">12</div>
-                <div className="stat-label">Cảnh báo</div>
+                <div className="stat-label">Alerts</div>
               </div>
             </div>
           </div>
@@ -42,20 +42,20 @@ const Dashboard = ({ resources, activeTab }) => {
       case 'resources':
         return (
           <div className="dashboard-section">
-            <h2>Quản lý tài nguyên</h2>
+            <h2>Resource Management</h2>
             <table className="resources-table">
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Tên</th>
-                  <th>Loại</th>
-                  <th>Trạng thái</th>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Status</th>
                 </tr>
               </thead>
               <tbody>
                 {resources.length === 0 ? (
                   <tr>
-                    <td colSpan="4">Không có tài nguyên nào</td>
+                    <td colSpan="4">No resources available</td>
                   </tr>
                 ) : (
                   resources.map((resource) => (
@@ -74,15 +74,15 @@ const Dashboard = ({ resources, activeTab }) => {
       case 'analytics':
         return (
           <div className="dashboard-section">
-            <h2>Phân tích hiệu suất</h2>
-            <p>Biểu đồ phân tích sẽ được hiển thị ở đây</p>
+            <h2>Performance Analytics</h2>
+            <p>Analytics charts will be displayed here</p>
           </div>
         );
       case 'settings':
         return (
           <div className="dashboard-section">
-            <h2>Cấu hình hệ thống</h2>
-            <p>Các tùy chọn cấu hình sẽ được hiển thị ở đây</p>
+            <h2>System Configuration</h2>
+            <p>Configuration options will be displayed here</p>
           </div>
         );
       default:

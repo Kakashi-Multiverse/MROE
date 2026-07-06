@@ -1,12 +1,12 @@
 /**
  * Sidebar Component
  * 
- * Thành phần sidebar chứa menu điều hướng chính
- * Cho phép người dùng chuyển đổi giữa các phần chính của ứng dụng
+ * Component that contains main navigation menu
+ * Allows users to switch between main sections of the application
  * 
- * @param {Object} props - Props của component
- * @param {string} props.activeTab - Tab hiện tại được chọn
- * @param {Function} props.setActiveTab - Hàm để thay đổi tab hiện tại
+ * @param {Object} props - Component props
+ * @param {string} props.activeTab - Currently selected tab
+ * @param {Function} props.setActiveTab - Function to change current tab
  * @returns {JSX.Element} Sidebar UI
  */
 
@@ -15,10 +15,10 @@ import '../styles/Sidebar.css';
 
 const Sidebar = ({ activeTab, setActiveTab }) => {
   const menuItems = [
-    { id: 'overview', label: '📊 Tổng quan', icon: '📊' },
-    { id: 'resources', label: '⚙️ Tài nguyên', icon: '⚙️' },
-    { id: 'analytics', label: '📈 Phân tích', icon: '📈' },
-    { id: 'settings', label: '🔧 Cấu hình', icon: '🔧' },
+    { id: 'overview', label: '📊 Overview', icon: '📊' },
+    { id: 'resources', label: '⚙️ Resources', icon: '⚙️' },
+    { id: 'analytics', label: '📈 Analytics', icon: '📈' },
+    { id: 'settings', label: '🔧 Settings', icon: '🔧' },
   ];
 
   return (

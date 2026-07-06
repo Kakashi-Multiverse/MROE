@@ -1,10 +1,10 @@
 /**
  * Header Component
  * 
- * Thành phần header hiển thị tiêu đề trang và các nút điều khiển chính
+ * Component that displays page title and main control buttons
  * 
- * @param {Object} props - Props của component
- * @param {string} props.title - Tiêu đề hiển thị trên header
+ * @param {Object} props - Component props
+ * @param {string} props.title - Title to display in header
  * @returns {JSX.Element} Header UI
  */
 
@@ -17,11 +17,11 @@ const Header = ({ title }) => {
       <div className="header-content">
         <h1 className="header-title">{title}</h1>
         <div className="header-actions">
-          <button className="btn btn-refresh" title="Làm mới dữ liệu">
-            🔄 Làm mới
+          <button className="btn btn-refresh" title="Refresh data">
+            🔄 Refresh
           </button>
-          <button className="btn btn-settings" title="Cài đặt">
-            ⚙️ Cài đặt
+          <button className="btn btn-settings" title="Settings">
+            ⚙️ Settings
           </button>
         </div>
       </div>

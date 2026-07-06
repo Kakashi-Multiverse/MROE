@@ -1,71 +1,71 @@
 # Multiverse Resource Optimization Engine (MROE) Dashboard
 
-## Giới thiệu
+## Introduction
 
-**MROE** là một công cụ tối ưu hóa tài nguyên đa vũ trụ, cung cấp một bảng điều khiển toàn diện để quản lý và giám sát tài nguyên trên nhiều môi trường.
+**MROE** is a multiverse resource optimization tool that provides a comprehensive dashboard for managing and monitoring resources across multiple environments.
 
-## Tính năng chính
+## Key Features
 
-- 📊 Bảng điều khiển trực quan theo dõi tài nguyên
-- ⚙️ Tối ưu hóa tự động dựa trên AI
-- 🔄 Đồng bộ hóa đa nền tảng
-- 📈 Phân tích hiệu suất chi tiết
-- 🛡️ Bảo mật và quản lý quyền truy cập
+- 📊 Intuitive dashboard for resource tracking
+- ⚙️ Automatic optimization based on AI
+- 🔄 Multi-platform synchronization
+- 📈 Detailed performance analytics
+- 🛡️ Security and access control
 
-## Yêu cầu
+## Requirements
 
 - Node.js >= 14.0.0
-- npm hoặc yarn
+- npm or yarn
 
-## Cài đặt
+## Installation
 
 ```bash
 # Clone repository
 git clone https://github.com/Kakashi-Multiverse/MROE.git
 
-# Cài đặt dependencies
+# Install dependencies
 cd MROE
 npm install
 ```
 
-## Sử dụng
+## Usage
 
 ```bash
-# Chạy server phát triển
+# Run development server
 npm run dev
 
-# Build cho production
+# Build for production
 npm run build
 
-# Chạy test
+# Run tests
 npm test
 ```
 
-## Cấu trúc dự án
+## Project Structure
 
 ```
 MROE/
 ├── src/
 │   ├── components/      # React components
-│   ├── pages/          # Trang chính
-│   ├── utils/          # Hàm tiện ích
-│   ├── api/            # Gọi API
+│   ├── pages/          # Main pages
+│   ├── utils/          # Utility functions
+│   ├── api/            # API calls
 │   └── styles/         # CSS/SCSS
-├── public/             # File tĩnh
+├── public/             # Static files
 ├── tests/              # Test cases
 ├── package.json
 └── README.md
 ```
 
-## Giấy phép
+## License
 
-MIT License - Xem file LICENSE để chi tiết
+MIT License - See LICENSE file for details
 
-## Đóng góp
+## Contributing
 
-Chúng tôi hoan nghênh các đóng góp! Vui lòng tạo pull request với các thay đổi của bạn.
+We welcome contributions! Please create a pull request with your changes.
 
-## Liên hệ
+## Contact
 
 📧 Email: support@mroe.dev
 🌐 Website: https://mroe.dev
