@@ -35,9 +35,9 @@ A control panel allowing you to:
 
 ### 🛡️ Stress-Test Anomaly Simulator
 Trigger catastrophic events to test system resilience:
-- **Va chạm Hố đen Siêu khối lượng** (Supermassive Black Hole Collision)
-- **Nghịch lý Thời gian Chronos** (Chronos Time Paradox)
-- **Cơn bão Phản Vật Chất** (Antimatter Storm)
+- **Supermassive Black Hole Collision**
+- **Chronos Time Paradox**
+- **Antimatter Storm**
 
 Watch the Resilience Engine automatically recover and stabilize affected universes.
 
@@ -163,16 +163,16 @@ MROE/
 - Select a source universe with surplus energy
 - Choose a destination universe with high demand
 - Enter transfer amount (5-50 GW)
-- Click "Kích Hoạt Truyền Tải" to execute
+- Click "Activate Transfer" to execute
 
 ### 3. **Trigger Anomalies**
-- Click "GIẢ LẬP DỊ THƯỜNG" to stress-test the system
+- Click "SIMULATE ANOMALY" to stress-test the system
 - Watch system entropy spike and resilience drop
 - Observe automatic recovery with the Resilience Engine
 - Check logs for detailed system actions
 
 ### 4. **Auto-Evolve the System**
-- Click "KÍCH HOẠT AUTO-EVOLVE" to upgrade
+- Click "ACTIVATE AUTO-EVOLVE" to upgrade
 - System fetches optimal algorithms from future timelines
 - Version mutates (e.g., v1.0.0 → v1.1-Cosmic)
 - Universe stability permanently increases by 10%
